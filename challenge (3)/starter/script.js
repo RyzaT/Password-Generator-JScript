@@ -92,8 +92,8 @@ var upperCasedCharacters = [
 // Function to prompt user for password options
 function getPasswordOptions() {
   
-  var choiceArr = [];
-  let passLength = parseInt(prompt("Enter a password length between 10 and 64"));
+  choiceArr = [];
+  passLength = parseInt(prompt("Enter a password length between 10 and 64"));
     if(isNaN(passLength) || passLength < 10 || passLength > 64) {
       alert("Password has to be between 10 and 64 characters, please try again");
     return false;
@@ -125,7 +125,7 @@ function getRandom(arr) {
 // Function to generate password with user input
 function generatePassword() {
   var password = "";
-  for(var i = 0; i , passLength; i++) {
+  for(var i = 0; i < passLength; i++) {
       var randomIndex = Math.floor(Math.random() * choiceArr.length);
       password = password + choiceArr[randomIndex];
   }
@@ -138,12 +138,13 @@ var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  var correctPrompts = getPrompts();
-    if (correctPrompts) {
-  var password = generatePassword();
+  var correctPrompts = getPasswordOptions();
   var passwordText = document.querySelector('#password');
+    if (correctPrompts) {
+  var newPassword = generatePassword();
+  
 
-  passwordText.value = password;
+  passwordText.value = newPassword;
     }
 }
 
@@ -152,9 +153,6 @@ generateBtn.addEventListener('click', writePassword);
 
 // My working
 //alert("Hi There! Lets make you a password")
-function getPrompts() {
-  
-}
 
 
 // My additions
