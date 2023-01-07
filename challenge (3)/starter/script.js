@@ -88,10 +88,10 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-//alert("Hey there, lets get you a password");
+
 // Function to prompt user for password options
 function getPasswordOptions() {
-  
+  alert("Hey there, lets get you a password, press the button below to start.");
   choiceArr = [];
   passLength = parseInt(prompt("Enter a password length between 10 and 64"));
     if(isNaN(passLength) || passLength < 10 || passLength > 64) {
@@ -106,7 +106,7 @@ function getPasswordOptions() {
     choiceArr = choiceArr.concat(upperCasedCharacters);
 
     }
-    if (confirm("Would you like to use numbers letters?")){
+    if (confirm("Would you like to use numbers in your password?")){
     choiceArr = choiceArr.concat(numericCharacters);
 
     }
