@@ -1,44 +1,28 @@
-# Password-Generator-JScript
-A Password Generator Bulit Around JavaScript
-Project Title
-Simple overview of use/purpose.
+#JavaScript Password Generator
+##Module 5 Challenge
 
-Description
-An in-depth paragraph about your project and overview of use.
+This week’s challenge requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
-Getting Started
-Dependencies
-Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-ex. Windows 10
-Installing
-How/where to download your program
-Any modifications needed to be made to files/folders
-Executing program
-How to run the program
-Step-by-step bullets
-code blocks for commands
-Help
-Any advise for common problems or issues.
+* Generate a password when the button is clicked
+  * Present a series of prompts for password criteria
+    * Length of password
+      * At least 10 characters but no more than 64.
+    * Character types
+      * Lowercase
+      * Uppercase
+      * Numeric
+      * Special characters ($@%&*, etc)
+  * Code should validate for each input and at least one character type should be selected
+  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
 
-command to run if program contains helper info
-Authors
-Contributors names and contact info
+##Installation
+N/A
 
+##Usage
+This repositorty is part of a bootcamp learning platform and is a part of my coursework. Please feel free to use it for your own studies.
 
-Version History
-0.2
-Various bug fixes and optimizations
-See commit change or See release history
-0.1
-Initial Release
-License
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+##Credits
+In order to complete this assignment i have mainly used the Stackoverflow and W3 Schools websites, As well as Youtube.
 
-Acknowledgments
-Inspiration, code snippets, etc.
-
-awesome-readme
-PurpleBooth
-dbader
-zenorocha
-fvcproductions
+##License
+Please refer to the LICENSE in the repo.
